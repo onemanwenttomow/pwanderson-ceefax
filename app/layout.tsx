@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={europeanTeletext.className}>
-        <main className="grid min-h-full place-items-center bg-blue-900 text-white">
+        <main className="grid min-h-full place-items-center bg-black text-white lg:bg-blue-900">
           <article className="mx-auto bg-black px-16 py-8">{children}</article>
         </main>
       </body>

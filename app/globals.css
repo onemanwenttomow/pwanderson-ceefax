@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html,
 body {
   height: 100%;
@@ -13,10 +17,18 @@ body {
 }
 
 article {
-  max-width: 1000px;
-  aspect-ratio: auto 1536 / 1152;
+  min-width: 100%;
 }
 
 .title {
   text-shadow: 0 6px black;
+}
+
+@media (min-width: 1001px) {
+  article {
+    max-width: 1000px;
+    aspect-ratio: auto 1536 / 1152;
+    min-width: auto;
+    min-height: auto;
+  }
 }
